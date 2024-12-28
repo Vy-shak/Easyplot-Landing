@@ -6,6 +6,7 @@ function loading() {
             ...loading
         </div>
     )
+    console.log("hello")
 }
 
 export default loading

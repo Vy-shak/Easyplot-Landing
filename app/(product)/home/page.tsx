@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import { Button } from "@/components/ui/button";
-import { Navbar, DottedBackground, Alertbox } from '../customComp/index';
+import { Navbar, DottedBackground, Alertbox } from '../../customComp/index';
 import { useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
