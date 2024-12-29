@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from "../../../public/Images/Logo.png"
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 function NavbarL() {
     return (
@@ -13,7 +14,9 @@ function NavbarL() {
                     <span className='text-bluePrimary-700 text-xs font-Montserrat font-semibold w-fit h-fit'>About us</span>
                     <span className='text-bluePrimary-700 text-xs font-Montserrat font-semibold w-fit h-fit'>Our services</span>
                 </div>
-                <Button variant={"epPrimary"} size={'sm'}>Merge</Button>
+                <Link href={'/home'}>
+                    <Button variant={"epPrimary"} size={'sm'}>Merge</Button>
+                </Link>
             </div>
         </section>
     )

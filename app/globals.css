@@ -65,6 +65,12 @@ body {
     justify-content:center;
     align-items: center;
   }
+  .flexcolCentertop {
+    display:flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+  }
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;

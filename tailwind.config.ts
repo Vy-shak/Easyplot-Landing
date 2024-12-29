@@ -95,6 +95,9 @@ export default {
 					600: '#3a3c3d',
 					700: '#1c1d1e',
 				},
+				stroke: {
+					500: '#E6E5E5'
+				},
 				gold: {
 					500: '#9B8601'
 				}
