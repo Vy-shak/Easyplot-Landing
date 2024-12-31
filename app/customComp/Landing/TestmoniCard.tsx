@@ -12,16 +12,20 @@ interface card {
 
 function TestmoniCard({ name, about, opinion }: card) {
     return (
-        <div className='flex justify-center items-center rounded-md p-4 hover:bg-white border-gray-300'>
-            <div className='h-full w-12 border-2'>
+        <div className='flex border-2 border-stroke-500 py-4 justify-center items-stretch w-96 rounded-md hover:bg-white '>
+            <div className='flex p-1 justify-center items-stretch border-r-2 border-neutral-400 border-dashed w-12'>
+                <div className='flex justify-start items-start bg-neutral-200 rounded-full '>
+                    <div className='w-10 relative top-0 h-10 bg-neutral-500 rounded-full'>
 
+                    </div>
+                </div>
             </div>
             <div className=' flex justify-center items-center flex-col w-full'>
-                <div className='w-full h-12 border-2'>
-                    <span>{name}</span>
-                    <span>{about}</span>
+                <div className='w-full pl-3 pb-2 flex justify-start items-start flex-col leading-5'>
+                    <span className='font-semibold font-Montserrat text-bluePrimary-700 text-sm'>{name}</span>
+                    <span className='font-semibold font-Montserrat text-neutral-500 text-xs'>{about}</span>
                 </div>
-                <div className='w-full h-full border-2 border-gray-300'>
+                <div className='w-full pl-3 pt-2 flex justify-start items-start flex-col font-Montserrat font-medium border-t-2 border-dashed text-xs text-neutral-500  border-neutral-400'>
                     <p>{opinion}</p>
                 </div>
             </div>
