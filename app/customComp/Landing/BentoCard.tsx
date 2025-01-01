@@ -1,6 +1,7 @@
 import { details } from 'motion/react-client'
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'motion/react'
 
 
 interface BentoCard {
@@ -13,6 +14,8 @@ interface BentoCard {
     defaultCss?: string
 
 }
+
+//fix initial={{ scale: 1 }} whileHover={{ scale: 2 }}
 
 function BentoCard({ flexLength, heading, detail, Img, height, width, defaultCss }: BentoCard) {
     return (

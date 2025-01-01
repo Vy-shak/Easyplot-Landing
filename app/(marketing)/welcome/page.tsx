@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavbarL } from '@/app/customComp';
-import { HeroL, Brands, Bentogrid, Images, Testmonials } from '../Sections';
+import { HeroL, Brands, Bentogrid, Images, Testmonials, Footer } from '../Sections';
 import { DottedBackground } from '@/app/customComp/index';
 import Special from '../Sections/Special';
 
@@ -27,6 +27,9 @@ function page() {
             </section>
             <section className='w-full flex justify-center px-16 h-fit'>
                 <Testmonials />
+            </section>
+            <section className='w-full flex justify-center px-16 h-fit'>
+                <Footer />
             </section>
         </section>
     )
