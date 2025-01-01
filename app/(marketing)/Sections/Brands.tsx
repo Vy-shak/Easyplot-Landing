@@ -14,8 +14,8 @@ import Marquee from 'react-fast-marquee';
 
 function Brands() {
     return (
-        <section className='flexColcenter space-y-6 w-full h-fit pb-6'>
-            <h4 className='w-full text-center mt-6 flexColcenter text-bluePrimary-700 font-bold font-Montserrat text-lg'><span>Trusted by Top</span><br /><span>Architecture Schools and firms</span></h4>
+        <section className='flexColcenter space-y-12 w-full h-fit pb-6'>
+            <h4 className='w-full text-center mt-8 flexColcenter text-bluePrimary-700 font-bold font-Montserrat text-lg'><span>Trusted by Top</span><br /><span>Architecture Schools and firms</span></h4>
             <div className='w-full flexCenter'>
                 <div className='w-full flex justify-center h-fit overflow-x-hidden'>
                     <Marquee gradient={true} pauseOnHover={true} className='space-x-4'>

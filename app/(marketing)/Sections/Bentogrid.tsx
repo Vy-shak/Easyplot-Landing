@@ -1,32 +1,26 @@
 import { div, section } from 'motion/react-client'
 import React from 'react'
+import BentoCard from '@/app/customComp/Landing/BentoCard'
+import Marketplace from "../../../public/Images/bento/Marketplace.png"
+import FindTalent from "../../../public/Images/bento/Findtalent.png"
+import Community from "../../../public/Images/bento/Comunity.png"
+import Mergesheets from "../../../public/Images/bento/Merge your sheets.png"
+
 
 const Bentogrid = () => {
     return (
-        <section className='flex flex-col w-full z-10 h-fit justify-center items-center pt-8 space-y-4'>
+        <section className='flex object-contain flex-col w-full z-10  justify-center items-center pt-8 space-y-4'>
             <span className='text-lg font-bold text-bluePrimary-700'>Our services</span>
-            <section className='w-full h-96 z-20 flex gap-3 px-16'>
+            <section className='w-full z-20 flex gap-3 px-16'>
                 <div style={{ flex: 2 }} className=' rounded-lg flex-col flex gap-3 w-full h-full'>
-                    <div style={{ flex: 2 }} className='border-2 rounded-lg flex gap-3 w-full h-full'>
-                        <div style={{ flex: 3 }} className='border-2 text-start p-2 flexcolCentertop rounded-lg w-full h-full border--500'>
-                            <div className='w-full bg-blue-500 h-36 rounded-md'>
-
-                            </div>
-                            <span className='font-medium w-fit'>Buy and sell your autocad templates</span>
-                            <p className='text-xs font-medium font-Montserrat text-neutral-500'>helping the recruters
-                                to find the best tallents</p>
-                        </div>
-                        <div style={{ flex: 2 }} className='border-2 flexcolCentertop rounded-lg w-full h-full border-yellow-500'>
-                            <span className='font-medium w-fit'>Merge your sheets</span>
-                        </div>
+                    <div style={{ flex: 2 }} className='rounded-lg flex gap-3 w-full h-full'>
+                        <BentoCard flexLength={3} height='h-34' width='w-full' Img={Marketplace} heading='Market place for your assests' detail='Empower your projects by purchasing premium AutoCAD files tailored for architects. access ready-to-use designs, and save valuable time  ' />
+                        <BentoCard flexLength={2} height='h-34' width='w-full' Img={FindTalent} heading='Find the talent' detail='connect with skilled architects to 
+build your dream team and bring your vision to life' />
                     </div>
-                    <div style={{ flex: 1 }} className='border-2 flexcolCentertop rounded-lg gap-3 w-full h-full border-green-500'>
-                        <span className='font-medium w-fit'>Merge your sheets</span>
-                    </div>
+                    <BentoCard flexLength={1} height='h-34' width='w-full' Img={Marketplace} heading='Market place for your assests' detail='Empower your projects by purchasing premium AutoCAD files tailored for architects. access ready-to-use designs, and save valuable time  ' />
                 </div>
-                <div style={{ flex: 1 }} className='border-2 w-full rounded-lg h-full border-black-500 flex flex-col justify-start items-center'>
-                    <span className='font-medium w-fit'>Merge your sheets</span>
-                </div>
+                <BentoCard defaultCss='items-stretch' flexLength={1} height='h-34' width='w-full' Img={Mergesheets} heading='Community intraction' detail='Community interaction for architects inspires collaboration, fostering the exchange of ideas, designs, and resources. It creates a space to connect with peers, share insights, and explore innovative solutions together. Through meaningful engagement,' />
             </section>
         </section>
     )
