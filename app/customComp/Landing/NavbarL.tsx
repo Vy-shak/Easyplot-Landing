@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function NavbarL() {
     return (
-        <section className='w-full fixed top-0 z-20 flex justify-between items-center h-12 bg-white shadow'>
+        <section className='w-full fixed top-0 z-50 flex justify-between items-center h-12 bg-white shadow'>
             <Image className='w-40 h-fit' src={Logo} alt="" />
             <div className='w-fit flexCenter h-fit mr-6'>
                 <div className='flexCenter w-fit h-fit mr-6 space-x-4'>

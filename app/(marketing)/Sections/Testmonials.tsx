@@ -52,13 +52,13 @@ function Testmonials() {
             </div>
             <div className='flexCenter gap-2'>
                 <div className='space-y-2'>
-                    {Row1.map((item) => (
-                        <TestmoniCard name={item.Username} about={item.about} opinion={item.opinion} />
+                    {Row1.map((item, index) => (
+                        <TestmoniCard key={index} name={item.Username} about={item.about} opinion={item.opinion} />
                     ))}
                 </div>
                 <div className='space-y-2'>
-                    {Row2.map((item) => (
-                        <TestmoniCard name={item.Username} about={item.about} opinion={item.opinion} />
+                    {Row2.map((item, index) => (
+                        <TestmoniCard key={index} name={item.Username} about={item.about} opinion={item.opinion} />
                     ))}
                 </div>
             </div>
