@@ -15,7 +15,7 @@ interface card {
 
 function TestmoniCard({ name, about, opinion }: card) {
     return (
-        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.01, y: -30, }} className='flex border-2 hover:z-30 border-stroke-500 py-4 justify-center items-stretch w-96 rounded-md hover:bg-white '>
+        <motion.div initial={{ scale: 1, }} whileHover={{ scale: 1.04, }} className='flex border-2 h-36 hover:z-30 hover:drop-shadow-md border-stroke-500 py-4 justify-center items-stretch w-96 rounded-md hover:bg-white '>
             <div className='flex p-1 justify-center items-stretch border-r-2 border-neutral-400 border-dashed w-12'>
                 <div className='flex justify-start items-start bg-neutral-200 rounded-full '>
                     <div className='w-10 relative top-0 h-10 bg-neutral-500 rounded-full'>

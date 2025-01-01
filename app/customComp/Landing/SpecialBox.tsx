@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { SetStateAction } from 'react'
+import { Dispatch } from 'react'
 
 interface SpecialBox {
-    text: string
+    id: number
+    text: string,
+    selection: string,
+    selSelection: Dispatch<SetStateAction<number>>
 }
 
-function SpecialBox({ text }: SpecialBox) {
+function SpecialBox({ text, selection, selSelection, id }: SpecialBox) {
     return (
-        <div className='flexCenter w-full h-fit font-Montserrat font-bold text-xs border-2 bg-neutral-50 border-stroke-500 rounded-lg px-8 py-4'>
+        <div onClick={() => selSelection(id)} className={`flexCenter w-full h-fit font-Montserrat ${selection} font-bold text-xs border-2  border-stroke-500 rounded-lg px-8 py-4`}>
             <span>{text}</span>
         </div>
     )
