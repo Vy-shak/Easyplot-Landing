@@ -4,6 +4,7 @@ import { motion } from 'motion/react'
 import { DottedBackground } from '@/app/customComp'
 import { Button } from '@/components/ui/button'
 import Boy1 from "../../../public/Images/Hero3d/Boy1.png"
+import Boy2 from "../../../public/Images/Hero3d/Boy2.png"
 import Image from 'next/image'
 import { spring } from 'motion'
 
@@ -17,7 +18,8 @@ function HeroL() {
     }, []);
     return (
         <section className='w-full pb-12     border-b-2 border-neutral-100 text-center flex items- flex-col h-fit'>
-            <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-20, 20] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: 16 }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-48 top-28 left-16' src={Boy1.src} />
+            <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-15, 15] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: Infinity }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-48 top-28 left-16' src={Boy1.src} />
+            <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-15, 15] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: Infinity }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-52 top-28 right-16' src={Boy2.src} />
             <div className='w-full text-center flex items- flex-col h-fit'>
                 <h1 className='font-Montserrat pt-24 content-center z-10 w-full h-fit text-3xl font-bold text-bluePrimary-700'><span className=''>Your<span className='text-gold-500'> submissions </span>are not</span>
                     <br />

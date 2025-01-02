@@ -20,13 +20,13 @@ function page() {
                 <Bentogrid />
             </section>
             <section className='w-full flex justify-center px-16 h-fit'>
+                <Team />
+            </section>
+            <section className='w-full flex justify-center px-16 h-fit'>
                 <Images />
             </section>
             <section className='w-full flex justify-center px-16 h-fit'>
                 <Special />
-            </section>
-            <section className='w-full flex justify-center px-16 h-fit'>
-                <Team />
             </section>
             <section className='w-full flex justify-center px-16 h-fit'>
                 <Testmonials />
