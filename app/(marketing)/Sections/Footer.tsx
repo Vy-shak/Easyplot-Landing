@@ -12,7 +12,7 @@ function Footer() {
         <section className='w-full flexBetween pt-12'>
             <div className='w-full  border-r-2 border-dashed  flex flex-col justify-start items-start'>
                 <h3 className='text-2xl leading-normal font-Montserrat font-bold'><span>Designed and </span><br /><span>Developed by</span></h3>
-                <TestmoniCard ProfileImg={me} opinion='anything' name='yshak N' about='Software developer and UI/Ux designer' />
+
             </div>
             <div className='w-full pl-2 flex space-y-4 flex-col justify-start items-start'>
                 <h3 className='text-2xl leading-normal font-Montserrat font-bold'><span>Special Thanks to</span></h3>
