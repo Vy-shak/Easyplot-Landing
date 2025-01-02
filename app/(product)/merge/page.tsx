@@ -3,7 +3,7 @@
 
 import { Section } from 'lucide-react'
 import React from 'react'
-import { DottedBackground, InfoCard } from '../customComp'
+import { DottedBackground, InfoCard } from '../../customComp'
 import { Button } from '@/components/ui/button'
 
 function merge() {

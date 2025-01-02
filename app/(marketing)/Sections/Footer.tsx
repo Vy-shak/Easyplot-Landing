@@ -5,13 +5,14 @@ import cohort from "../../../public/Images/Thanks/100x.png"
 import harkirat from "../../../public/Images/Thanks/Harkirat.png"
 import College from "../../../public/Images/Thanks/Manit.png"
 import Image from 'next/image'
+import me from "../../../public/Images/footer/my image.png"
 
 function Footer() {
     return (
         <section className='w-full flexBetween pt-12'>
             <div className='w-full  border-r-2 border-dashed  flex flex-col justify-start items-start'>
                 <h3 className='text-2xl leading-normal font-Montserrat font-bold'><span>Designed and </span><br /><span>Developed by</span></h3>
-                <TestmoniCard opinion='anything' name='yshak N' about='Software developer and UI/Ux designer' />
+                <TestmoniCard ProfileImg={me} opinion='anything' name='yshak N' about='Software developer and UI/Ux designer' />
             </div>
             <div className='w-full pl-2 flex space-y-4 flex-col justify-start items-start'>
                 <h3 className='text-2xl leading-normal font-Montserrat font-bold'><span>Special Thanks to</span></h3>

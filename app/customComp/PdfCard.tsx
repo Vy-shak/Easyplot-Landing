@@ -9,4 +9,3 @@ const PdfCard = () => {
 }
 
 export default PdfCard
-8

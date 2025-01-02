@@ -1,12 +1,12 @@
 'use client'
-
-import { image, section } from 'motion/react-client'
+import Image from 'next/image'
 import React, { useState } from 'react'
 import SpecialBox from '@/app/customComp/Landing/SpecialBox'
 import Affordable from "../../../public/Images/Special/Affordable pricing.jpg"
 import Blog from "../../../public/Images/Special/Blog.jpg"
 import Selling from "../../../public/Images/Special/Selling.jpg"
-import Image from 'next/image'
+import MergeSheet from "../../../public/Images/Special/Merge.jpg"
+import merge from '@/app/(product)/merge/page'
 
 
 const data = [{
@@ -16,7 +16,7 @@ const data = [{
 }, {
     id: 1,
     text: 'Merge sheets with Respctive to sheet number',
-    Img: Selling
+    Img: MergeSheet
 }, {
     id: 2,
     text: 'Affordable price for students',
@@ -37,11 +37,17 @@ function Special() {
                 ))}
             </div>
             {data.map((item, index) => {
+                let val = index + 10
                 if (selected === index) {
                     return (
                         <div className='w-full h-full rounded-lg bg-neutral-50 border-2 border-stroke-500'>
-                            <Image key={index} className='rounded-lg' alt='special image' src={item.Img} />
+                            <Image key={val} className='rounded-lg' alt='special image' src={item.Img} />
                         </div>
+                    )
+                }
+                else if (selected !== index) {
+                    return (
+                        <span key={val}>{null}</span>
                     )
                 }
             })}
