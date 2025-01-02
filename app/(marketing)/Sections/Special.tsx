@@ -6,7 +6,7 @@ import Affordable from "../../../public/Images/Special/Affordable pricing.jpg"
 import Blog from "../../../public/Images/Special/Blog.jpg"
 import Selling from "../../../public/Images/Special/Selling.jpg"
 import MergeSheet from "../../../public/Images/Special/Merge.jpg"
-import merge from '@/app/(product)/merge/page'
+import { div } from 'motion/react-client'
 
 
 const data = [{
@@ -27,30 +27,24 @@ const data = [{
     Img: Blog
 },]
 
+
 function Special() {
-    const [selected, setSelected] = useState(0)
+    const [selected, setSelected] = useState({
+        id: 0,
+        text: 'Market place to sell your assets',
+        Img: Selling
+    })
+
+
+    console.log(selected)
     return (
         <section className='flex items-center space-x-12  pt-20 justify-center w-full p-4'>
-            <div className='w-full space-y-8 h-full '>
-                {data.map((item, index) => (
-                    <SpecialBox key={index} id={index} selSelection={setSelected} selection={`${selected === index ? 'bg-bluePrimary-600 text-white' : 'bg-neutral-50 '}`} text={item.text} />
+            <div className='w-full space-y-8 h-fit '>
+                {data.map((item) => (
+                    <SpecialBox key={item.id} element={item} selSelection={setSelected} selection={`${selected.id === item.id ? 'bg-bluePrimary-600 text-white' : 'bg-neutral-50 '}`} text={item.text} />
                 ))}
             </div>
-            {data.map((item, index) => {
-                let val = index + 10
-                if (selected === index) {
-                    return (
-                        <div className='w-full h-full rounded-lg bg-neutral-50 border-2 border-stroke-500'>
-                            <Image key={val} className='rounded-lg' alt='special image' src={item.Img} />
-                        </div>
-                    )
-                }
-                else if (selected !== index) {
-                    return (
-                        <span key={val}>{null}</span>
-                    )
-                }
-            })}
+            <Image alt='prview' className='w-1/2 h-full rounded-lg' src={selected.Img} />
         </section>
     )
 }
