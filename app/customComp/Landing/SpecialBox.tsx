@@ -18,8 +18,8 @@ interface SpecialBox {
 
 function SpecialBox({ text, selection, selSelection, element }: SpecialBox) {
     return (
-        <div onClick={() => selSelection(element)} className={`flexCenter w-full h-fit font-Montserrat ${selection} font-bold text-xs border-2  border-stroke-500 rounded-lg px-8 py-4`}>
-            <span>{text}</span>
+        <div onClick={() => selSelection(element)} className={`flexCenter w-full max-md:text-[12px] max-md:font-semibold h-fit font-Montserrat ${selection} font-bold text-xs border-2 max-md:leading-3  border-stroke-500 rounded-lg px-8 max-md:py-2 md:py-4`}>
+            <span >{text}</span>
         </div>
     )
 }

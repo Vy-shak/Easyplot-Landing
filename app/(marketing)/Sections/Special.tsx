@@ -38,8 +38,8 @@ function Special() {
 
     console.log(selected)
     return (
-        <section className='flex items-center space-x-12  pt-20 justify-center w-full p-4'>
-            <div className='w-full space-y-8 h-fit '>
+        <section className='flex max-md:flex-col items-center max-md:space-y-4 md:space-x-12 max-md:pt-12  md:pt-20 justify-center w-full p-4'>
+            <div className='w-full  max-md:space-y-2 md:space-y-8 h-fit '>
                 {data.map((item) => (
                     <SpecialBox key={item.id} element={item} selSelection={setSelected} selection={`${selected.id === item.id ? 'bg-bluePrimary-600 text-white' : 'bg-neutral-50 '}`} text={item.text} />
                 ))}

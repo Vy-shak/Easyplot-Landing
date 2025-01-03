@@ -59,12 +59,12 @@ const Row2 = [
 
 function Testmonials() {
     return (
-        <section className='flexcolCenter space-y-6 border-8 mt-12 rounded-xl px-8 py-4 border-bluePrimary-600'>
+        <section className='flexcolCenter space-y-6 border-8 mt-12 rounded-xl max-md:px-4 md:px-8 py-4 border-bluePrimary-600'>
             <div className='flexCenter g-white border-2 w-fit border-stroke-500 p-2 rounded-full font-sans space-x-2 h-fit shadow-sm'>
                 <MessageSquareText />
-                <span className='font-bold b w-fit'>Testmonials</span>
+                <span className='font-bold  max-md:text-xs  w-fit'>Testmonials</span>
             </div>
-            <div className='flexCenter gap-2'>
+            <div className='flexCenter max-md:gap-1  md:gap-2'>
                 <div className='space-y-2'>
                     {Row1.map((item, index) => (
                         <TestmoniCard ProfileImg={item.dp} key={index} name={item.Username} about={item.about} opinion={item.opinion} />
