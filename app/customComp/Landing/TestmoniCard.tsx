@@ -25,7 +25,7 @@ function TestmoniCard({ name, about, opinion, ProfileImg }: card) {
             </div>
             <div className=' flex justify-center h-24 items-center flex-col w-full'>
                 <div className='w-full pl-3 pb-2 flex justify-start items-start flex-col leading-5'>
-                    <span className='font-semibold font-Montserrat text-bluePrimary-700 max-md:xs text-sm'>{name}</span>
+                    <span className='font-semibold font-Montserrat text-bluePrimary-700 max-md:xs  leading-tight max-sm:text-[14px] text-sm'>{name}</span>
                     <span className='font-semibold font-Montserrat text-neutral-500 max-md:text-[14px] max-md:leading-tight md:text-xs'>{about}</span>
                 </div>
                 <div className='w-full max-md:text-[12px] pl-3 pt-2  leading-3 flex justify-start items-start flex-col font-Montserrat font-medium border-t-2 border-dashed text-xs text-neutral-500  border-neutral-400'>

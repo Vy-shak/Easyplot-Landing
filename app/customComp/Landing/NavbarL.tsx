@@ -11,7 +11,7 @@ function NavbarL() {
 
     // const size = mobile ? 'xs' : 'sm'
     return (
-        <section className='w-full box-border absolute top-0 z-50 flex justify-between items-center max-md:px-8  md:h-12  bg-white shadow'>
+        <section className='w-full box-border absolute top-0 z-50 flex justify-between items-center max-sm:px-4 max-md:px-8  h-12  bg-white shadow'>
             <Image className='w-40 h-fit' src={Logo} alt="" />
             <div className='w-fit flexCenter  h-fit md:mr-6'>
                 <div className='flexCenter max-md:hidden w-fit h-fit mr-6 max-md:space-x-2 md:space-x-4'>

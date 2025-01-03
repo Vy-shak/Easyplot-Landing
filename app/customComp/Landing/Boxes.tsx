@@ -10,7 +10,7 @@ interface Boxes {
 
 function Boxes({ length, box1, box2, box3 }: Boxes) {
     return (
-        <div className={`flexBetween ${length} max-sm:hidden space-x-1 h-2`}>
+        <div className={`flexBetween ${length} max-lg:hidden space-x-1 h-2`}>
             <div className={`${box1} bg-bluePrimary-400 h-full rounded-full`}>
 
             </div>

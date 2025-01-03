@@ -64,7 +64,7 @@ function Testmonials() {
                 <MessageSquareText />
                 <span className='font-bold  max-md:text-xs  w-fit'>Testmonials</span>
             </div>
-            <div className='flexCenter max-md:gap-1  md:gap-2'>
+            <div className='flexCenter max-sm:flex-col  md:gap-2'>
                 <div className='space-y-2'>
                     {Row1.map((item, index) => (
                         <TestmoniCard ProfileImg={item.dp} key={index} name={item.Username} about={item.about} opinion={item.opinion} />

@@ -11,7 +11,7 @@ const Bentogrid = () => {
     return (
         <section className='flex object-contain flex-col w-full z-10  justify-center items-center max-md:pt-4 md:pt-8 space-y-4'>
             <span className='text-lg max-md:text-sm md:text-lg font-bold text-bluePrimary-700'>Our services</span>
-            <section className='w-full z-20 flex max-md:gap-1 md:gap-3 max-md:px-4 md:px-16'>
+            <section className='w-full z-20 flex max-md:gap-1 md:gap-3  lg:px-16'>
                 <div style={{ flex: 2 }} className=' rounded-lg flex-col flex max-md:gap-1 md:gap-3 w-full h-full'>
                     <div style={{ flex: 2 }} className='rounded-lg flex max-md:gap-1 md:gap-3 w-full h-full'>
                         <BentoCard flexLength={3} height='h-34' width='w-full' Img={Marketplace} heading='Market place for your assests' detail='Empower your projects by purchasing premium AutoCAD files tailored for architects. access ready-to-use designs, and save valuable time  ' />
