@@ -19,7 +19,7 @@ function HeroL() {
     return (
         <section className='w-full max-sm:pb-6 pb-12 max-md:pb-12 border-b-2 border-neutral-100 text-center flex items- flex-col h-fit'>
             <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-15, 15] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: Infinity }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-48 max-sm:w-20 max-lg:w-32 max-md:w-24 top-28 max-sm:-left-8 max-md:left-10 left-8' src={Boy1.src} />
-            <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-15, 15] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: Infinity }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-52 max-md:w-24 max-lg:w-40 top-28 max-sm:w-24 max-md:right-10 right-8  max-sm:-right-8' src={Boy2.src} />
+            <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-15, 15] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: Infinity }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-52 max-md:w-24 max-lg:w-40 top-28 max-sm:w-24 max-md:right-10 right-8  max-sm:right-2' src={Boy2.src} />
             <div className='w-full text-center flex items- flex-col h-fit'>
                 <h1 className='font-Montserrat max-md:text-xl max-sm:text-lg max-lg:text-2xl max-sm:pt-16 pt-24 max-md:pt-24 max-lg:pt- content-center z-10 w-full h-fit text-3xl font-bold text-bluePrimary-700'><span className=''>Your<span className='text-gold-500'> submissions </span>are not</span>
                     <br />
@@ -38,7 +38,7 @@ function HeroL() {
                 </h4>
                 <div className='flexCenter max-md:flex-col max-md:pt-3 md:pt-6 w-full max-md:space-y-3 md:space-x-6 z-0 h-fit'>
                     <Button variant={'epPrimary'} size={'sm'}>Create an account</Button>
-                    <Button variant={'secondary'} size={'sm'}>Continue as a guest</Button>
+                    <Button variant={'secondary'} size={'sm'}>Continue as guest</Button>
                 </div>
             </div>
         </section>
