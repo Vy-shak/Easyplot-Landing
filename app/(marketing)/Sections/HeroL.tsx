@@ -18,10 +18,10 @@ function HeroL() {
     }, []);
     return (
         <section className='w-full pb-12     border-b-2 border-neutral-100 text-center flex items- flex-col h-fit'>
-            <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-15, 15] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: Infinity }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-48 top-28 left-16' src={Boy1.src} />
-            <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-15, 15] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: Infinity }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-52 top-28 right-16' src={Boy2.src} />
+            <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-15, 15] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: Infinity }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-48 max-sm:w-12 max-lg:w-28 max-md:w-20 top-28 max-md: left-2' src={Boy1.src} />
+            <motion.img initial={{ scale: 1 }} animate={{ scale: 1.1, translateY: [-15, 15] }} transition={{ translateY: { duration: 6, repeatType: 'mirror', repeat: Infinity }, scale: { duration: 1, repeat: 0 } }} alt='3d boy model' className='absolute w-52 max-md:w-20 max-lg:w-28 top-28 right-2' src={Boy2.src} />
             <div className='w-full text-center flex items- flex-col h-fit'>
-                <h1 className='font-Montserrat pt-24 content-center z-10 w-full h-fit text-3xl font-bold text-bluePrimary-700'><span className=''>Your<span className='text-gold-500'> submissions </span>are not</span>
+                <h1 className='font-Montserrat max-md:text-xl max-sm:text-lg max-lg:text-2xl pt-24 content-center z-10 w-full h-fit text-3xl font-bold text-bluePrimary-700'><span className=''>Your<span className='text-gold-500'> submissions </span>are not</span>
                     <br />
                     <div className='inline-block'>
                         <div className='flex flex-col items-start justify-center w-fit h-fit'>
