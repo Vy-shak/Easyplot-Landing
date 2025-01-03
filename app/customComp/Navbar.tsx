@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <section className='w-full box-border text-bluePrimary-700 h-12 max-w-screen fixed top-0 z-50   drop-shadow bg-white flexBetween font-semibold text-xs px-6'>
+        <section className='w-screen box-border text-bluePrimary-700 h-12 max-w-screen fixed top-0 z-50   drop-shadow bg-white flexBetween font-semibold text-xs px-6'>
             <span>LOGO</span>
             <div className='flex space-x-4 box-border w-fit h-fit   '>
                 <span className='hover:text-bluePrimary-700 '>MERGE PDF</span>

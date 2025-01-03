@@ -6,7 +6,7 @@ import Special from '../Sections/Special';
 
 function page() {
     return (
-        <section className='w-full flex-col justify-center items-start pb-16'>
+        <section className='w-full flex-col box-border overflow-clip justify-center items-start pb-16'>
             <NavbarL />
             <section className='w-full max-sm:px-4 max-md:px-8 md:px-16 h-fit'>
                 {/* <DottedBackground /> */}
