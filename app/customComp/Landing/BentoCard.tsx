@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 
 interface BentoCard {
@@ -9,7 +9,7 @@ interface BentoCard {
     detail: string
     height: string,
     width: string,
-    Img: any,
+    Img: StaticImageData,
     defaultCss?: string
 
 }
