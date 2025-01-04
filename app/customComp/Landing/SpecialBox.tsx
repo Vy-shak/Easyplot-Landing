@@ -1,12 +1,13 @@
 'use client'
 
+import { StaticImageData } from 'next/image'
 import React, { SetStateAction } from 'react'
 import { Dispatch } from 'react'
 
 interface element {
     id: number,
     text: string,
-    Img: any
+    Img: StaticImageData
 }
 
 interface SpecialBox {

@@ -1,13 +1,11 @@
 'use client'
 
-import { section } from 'motion/react-client'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import Iphone from "../../../public/Images/team/IphoneCover.png"
 
 function Team() {
     const [spread, setSpread] = useState(false)
-    const back0 = 'hover:bottom-0 hover:right-0 transition-all duration-500'
     return (
         <section className='flex pt-12  justify-start items-start flex-col w-full h-fit'>
             <h3 className='font-bold font-Montserrat  text-bluePrimary-700 max-md:text-xl md:text-4xl'><span>Meet the</span><br /><span>Team</span></h3>

@@ -1,13 +1,9 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { motion } from 'motion/react'
-import { DottedBackground } from '@/app/customComp'
 import { Button } from '@/components/ui/button'
 import Boy1 from "../../../public/Images/Hero3d/Boy1.png"
 import Boy2 from "../../../public/Images/Hero3d/Boy2.png"
-import HamburgerSlide from './HamburgerSlide'
-import Image from 'next/image'
-import { spring } from 'motion'
 
 function HeroL() {
     const [loaded, setloaded] = useState(false);

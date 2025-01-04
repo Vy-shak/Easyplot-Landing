@@ -3,14 +3,9 @@ import Image from 'next/image'
 import Logo from "../../../public/Images/Logo.png"
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { useMediaQuery } from 'react-responsive'
 import Burger from "../../../public/icons/BurgerMenu"
 
 function NavbarL() {
-    // const mobile = useMediaQuery({ query: "(max-width: 767px)" });
-
-
-    // const size = mobile ? 'xs' : 'sm'
     return (
         <section className='w-full box-border absolute top-0 z-50 flex justify-between items-center max-sm:px-4 max-md:px-8  h-12  bg-white shadow'>
             <Image className='max-sm:w-28 max-sm:-ml-2 w-40 h-fit' src={Logo} alt="" />

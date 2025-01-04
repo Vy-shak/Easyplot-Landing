@@ -1,8 +1,6 @@
 'use client'
 
-import { div, option } from 'motion/react-client'
 import React from 'react'
-import { useRouter } from 'next/router'
 import { motion } from 'motion/react'
 import Image, { StaticImageData } from 'next/image'
 

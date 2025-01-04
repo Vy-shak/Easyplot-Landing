@@ -6,7 +6,6 @@ import Affordable from "../../../public/Images/Special/Affordable pricing.jpg"
 import Blog from "../../../public/Images/Special/Blog.jpg"
 import Selling from "../../../public/Images/Special/Selling.jpg"
 import MergeSheet from "../../../public/Images/Special/Merge.jpg"
-import { div } from 'motion/react-client'
 
 
 const data = [{

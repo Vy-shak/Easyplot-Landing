@@ -1,9 +1,8 @@
-import { div, section } from 'motion/react-client'
+
 import React from 'react'
 import BentoCard from '@/app/customComp/Landing/BentoCard'
 import Marketplace from "../../../public/Images/bento/Marketplace.png"
 import FindTalent from "../../../public/Images/bento/Findtalent.png"
-import Community from "../../../public/Images/bento/Comunity.png"
 import Mergesheets from "../../../public/Images/bento/Merge your sheets.png"
 
 
