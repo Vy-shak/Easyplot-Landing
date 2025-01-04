@@ -1,6 +1,5 @@
-
+import { useRouter } from "next/router";
 export default function Home() {
-  return (
-    <div>Your Easy plot Landing</div>
-  );
+  const router = useRouter();
+  router.push('/welcome');
 }
