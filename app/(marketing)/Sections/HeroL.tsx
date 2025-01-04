@@ -32,7 +32,7 @@ function HeroL() {
                 <h4 className='font-Montserrat z-10 text-xs pt-6 leading-6 text-neutral-600 font-medium'>
                     <span>Unite your architecture journey—merge PDFs, access premium AutoCAD assets,</span><br />
                     <span>and unlock exciting career opportunities,</span><br />
-                    <span>all in one platform. Designed by students, for students!</span>
+                    <span>all in one platform. Designed by a student, for students!</span>
                 </h4>
                 <div className='flexCenter max-md:flex-col max-md:pt-3 md:pt-6 w-full max-md:space-y-3 md:space-x-6 z-0 h-fit'>
                     <Link href={'/message?feature=Create an account'}>

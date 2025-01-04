@@ -3,7 +3,7 @@ import { HeroL, Brands, Bentogrid, Images, Testmonials, Footer, Team } from '../
 import Special from '../Sections/Special';
 function page() {
     return (
-        <>
+        <div className='w-full scroll-smooth'>
             <section id='hero' className='w-full max-sm:px-4 max-md:px-8 max-lg:px-10 lg:px-16 h-fit'>
                 <HeroL />
             </section>
@@ -29,7 +29,7 @@ function page() {
             <section id='footer' className='w-full flex justify-center max-sm:px-4 max-lg:px-10 max-md:px-8 lg:px-16 h-fit'>
                 <Footer />
             </section>
-        </>
+        </div>
     )
 }
 
