@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavbarL } from '@/app/customComp';
 import { HeroL, Brands, Bentogrid, Images, Testmonials, Footer, Team } from '../Sections';
-import { DottedBackground } from '@/app/customComp/index';
 import Special from '../Sections/Special';
 
 function page() {
@@ -9,7 +8,6 @@ function page() {
         <section className='w-full flex-col box-border overflow-clip justify-center itemslg:px-16'>
             <NavbarL />
             <section className='w-full max-sm:px-4 max-md:px-8 max-lg:px-10 lg:px-16 h-fit'>
-                {/* <DottedBackground /> */}
                 <HeroL />
             </section>
             <section className='w-full flex justify-center max-sm:px-4 max-lg:px-10  lg:px-16 max-md:px-8  h-fit'>
