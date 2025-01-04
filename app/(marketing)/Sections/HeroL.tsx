@@ -4,6 +4,7 @@ import { motion } from 'motion/react'
 import { Button } from '@/components/ui/button'
 import Boy1 from "../../../public/Images/Hero3d/Boy1.png"
 import Boy2 from "../../../public/Images/Hero3d/Boy2.png"
+import Link from 'next/link';
 
 function HeroL() {
     const [loaded, setloaded] = useState(false);
@@ -34,9 +35,12 @@ function HeroL() {
                     <span>all in one platform. Designed by students, for students!</span>
                 </h4>
                 <div className='flexCenter max-md:flex-col max-md:pt-3 md:pt-6 w-full max-md:space-y-3 md:space-x-6 z-0 h-fit'>
-                    <Button variant={'epPrimary'} size={'sm'}>Create an account</Button>
-                    <Button variant={'secondary'} size={'sm'}>Continue as guest</Button>
-                </div>
+                    <Link href={'/message?feature=Create an account'}>
+                        <Button variant={'epPrimary'} size={'sm'}>Create an account</Button>
+                    </Link>
+                    <Link href={'/message?feature=Continue as a guest'}>
+                        <Button variant={'secondary'} size={'sm'}>Continue as guest</Button>
+                    </Link>                </div>
             </div>
         </section>
     )

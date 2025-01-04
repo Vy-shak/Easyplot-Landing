@@ -40,7 +40,7 @@ function Special() {
         <section className='flex max-md:flex-col items-center max-md:space-y-4 max-lg:space-x-6 lg:space-x-12 max-md:pt-12 max-lg:pt-16 lg:pt-20 justify-center w-full'>
             <div className='w-full  max-md:space-y-2 max-lg:space-y-4 lg:space-y-8 h-fit '>
                 {data.map((item) => (
-                    <SpecialBox key={item.id} element={item} selSelection={setSelected} selection={`${selected.id === item.id ? 'bg-bluePrimary-600 text-white' : 'bg-neutral-50 '}`} text={item.text} />
+                    <SpecialBox key={item.id} element={item} selSelection={setSelected} selection={`${selected.id === item.id ? 'bg-bluePrimary-600 cursor-pointer text-white' : 'bg-neutral-50 '}`} text={item.text} />
                 ))}
             </div>
             <Image alt='prview' className='w-1/2 h-full rounded-lg' src={selected.Img} />
